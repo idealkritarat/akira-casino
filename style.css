@@ -1,0 +1,55 @@
+
+
+main {
+    position: fixed;
+    top:50%;
+    left: 50%;
+    max-height: 800px;
+    max-width: 1000px;
+    height: 100%;
+    width: 100%;
+    transform: translate(-50%,-50%);
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap:20px;
+    padding:20px;
+}
+
+.slot {
+    display:flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: #ccc;
+    width: 100%;
+    height: 100%;
+    padding: 80px;
+}
+
+.slot > div {
+    height: 400px;
+    width: 200px;
+    background: #555;
+    padding: 20px;
+    overflow-y: hidden;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.slot-scroll {
+    width: 100%;
+}
+
+.slot-scroll > div {
+    background: #999;
+    width: 100%;
+    height: 150px;
+    scroll-snap-align: center;
+    display: grid;
+    place-items: center;
+    margin-bottom: 20px;
+    font-size:40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
